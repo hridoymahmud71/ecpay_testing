@@ -50,6 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'test/landing';
+$route['ajaxtest/landing'] = 'ajaxtest/landing';
+$route['ajaxtest/process'] = 'ajaxtest/process';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
@@ -64,3 +66,4 @@ $route['test/web_atm'] 		= 'test/web_atm';
 
 $route['test/server_reply'] = 'test/server_reply';
 $route['test/redirect'] = 'test/redirect';
+$route['ajaxtest/redirect'] = 'ajaxtest/redirect';

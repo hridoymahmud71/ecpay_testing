@@ -19,6 +19,12 @@
 
 <div class="container">
 	<div class="row mt-10">
+		<div class="col-sm-6">
+			<a class="btn btn-block btn-danger" href="ajaxtest/landing">In-site testing</a>
+		</div>
+	</div>
+	<br>
+	<div class="row mt-10">
 		<div class="col-sm-3">
 			<a class="btn btn-block btn-info" href="test/atm">ATM</a>
 		</div>
