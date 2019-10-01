@@ -5,7 +5,7 @@ include_once(APPPATH . "libraries/ECPayAIO_PHP/AioSDK/sdk/ECPay.Payment.Integrat
 class Test extends CI_Controller
 {
 
-	public $ReturnURL;
+	public $ReturnURL,$ServiceURL,$HashKey,$HashIV,$MerchantID;
 	public function landing()
 	{
 		$this->load->view('landing');
@@ -14,7 +14,21 @@ class Test extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->ReturnURL = "test/redirect";//original "http://www.ecpay.com.tw/receive.php";
+		$this->ReturnURL = "test/redirect"; //original "http://www.ecpay.com.tw/receive.php";
+
+		/* from flemlin https://github.com/flamelin/ECPay
+		 return [
+					'ServiceURL' => env('PAY_SERVICE_URL', 'https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V2'),
+					'HashKey' => env('PAY_HASH_KEY', '5294y06JbISpM5x9'),
+					'HashIV' => env('PAY_HASH_IV', 'v77hoKGq4kWxNNIS'),
+					'MerchantID' => env('PAY_MERCHANT_ID', '2000132'),
+				];
+		*/
+
+		$this->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V2"; //original https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5
+		$this->HashKey = "5294y06JbISpM5x9"; //original 5294y06JbISpM5x9
+		$this->HashIV = "v77hoKGq4kWxNNIS"; //original v77hoKGq4kWxNNIS
+		$this->MerchantID = "2000132"; //original 2000132
 	}
 
 	public function atm()
@@ -24,10 +38,10 @@ class Test extends CI_Controller
 			$obj = new ECPay_AllInOne();
 
 			//服務參數
-			$obj->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5";   //服務位置
-			$obj->HashKey = '5294y06JbISpM5x9';                                           //測試用Hashkey，請自行帶入ECPay提供的HashKey
-			$obj->HashIV = 'v77hoKGq4kWxNNIS';                                           //測試用HashIV，請自行帶入ECPay提供的HashIV
-			$obj->MerchantID = '2000132';                                                     //測試用MerchantID，請自行帶入ECPay提供的MerchantID
+			$obj->ServiceURL = $this->ServiceURL;   //服務位置
+			$obj->HashKey = $this->HashKey;                                           //測試用Hashkey，請自行帶入ECPay提供的HashKey
+			$obj->HashIV = $this->HashIV;                                           //測試用HashIV，請自行帶入ECPay提供的HashIV
+			$obj->MerchantID = $this->MerchantID;                                                     //測試用MerchantID，請自行帶入ECPay提供的MerchantID
 			$obj->EncryptType = '1';                                                           //CheckMacValue加密類型，請固定填入1，使用SHA256加密
 			//基本參數(請依系統規劃自行調整)
 			$MerchantTradeNo = "Test" . time();
@@ -78,10 +92,10 @@ class Test extends CI_Controller
 			$obj = new ECPay_AllInOne();
 
 			//服務參數
-			$obj->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5";  //服務位置
-			$obj->HashKey = '5294y06JbISpM5x9';                                          //測試用Hashkey，請自行帶入ECPay提供的HashKey
-			$obj->HashIV = 'v77hoKGq4kWxNNIS';                                          //測試用HashIV，請自行帶入ECPay提供的HashIV
-			$obj->MerchantID = '2000132';                                                    //測試用MerchantID，請自行帶入ECPay提供的MerchantID
+			$obj->ServiceURL = $this->ServiceURL;  //服務位置
+			$obj->HashKey = $this->HashKey;                                          //測試用Hashkey，請自行帶入ECPay提供的HashKey
+			$obj->HashIV = $this->HashIV;                                          //測試用HashIV，請自行帶入ECPay提供的HashIV
+			$obj->MerchantID = $this->MerchantID;                                                    //測試用MerchantID，請自行帶入ECPay提供的MerchantID
 			$obj->EncryptType = '1';                                                          //CheckMacValue加密類型，請固定填入1，使用SHA256加密
 			//基本參數(請依系統規劃自行調整)
 			$MerchantTradeNo = "Test" . time();
@@ -129,10 +143,10 @@ class Test extends CI_Controller
 			$obj = new ECPay_AllInOne();
 
 			//服務參數
-			$obj->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5";   //服務位置
-			$obj->HashKey = '5294y06JbISpM5x9';                                           //測試用Hashkey，請自行帶入ECPay提供的HashKey
-			$obj->HashIV = 'v77hoKGq4kWxNNIS';                                           //測試用HashIV，請自行帶入ECPay提供的HashIV
-			$obj->MerchantID = '2000132';                                                     //測試用MerchantID，請自行帶入ECPay提供的MerchantID
+			$obj->ServiceURL = $this->ServiceURL;   //服務位置
+			$obj->HashKey = $this->HashKey;                                           //測試用Hashkey，請自行帶入ECPay提供的HashKey
+			$obj->HashIV = $this->HashIV;                                           //測試用HashIV，請自行帶入ECPay提供的HashIV
+			$obj->MerchantID = $this->MerchantID;                                                     //測試用MerchantID，請自行帶入ECPay提供的MerchantID
 			$obj->EncryptType = '1';                                                           //CheckMacValue加密類型，請固定填入1，使用SHA256加密
 			//基本參數(請依系統規劃自行調整)
 			$MerchantTradeNo = "Test" . time();
@@ -188,10 +202,10 @@ class Test extends CI_Controller
 			$obj = new ECPay_AllInOne();
 
 			//服務參數
-			$obj->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5";   //服務位置
-			$obj->HashKey = '5294y06JbISpM5x9';                                           //測試用Hashkey，請自行帶入ECPay提供的HashKey
-			$obj->HashIV = 'v77hoKGq4kWxNNIS';                                           //測試用HashIV，請自行帶入ECPay提供的HashIV
-			$obj->MerchantID = '2000132';                                                     //測試用MerchantID，請自行帶入ECPay提供的MerchantID
+			$obj->ServiceURL = $this->ServiceURL;   //服務位置
+			$obj->HashKey = $this->HashKey;                                           //測試用Hashkey，請自行帶入ECPay提供的HashKey
+			$obj->HashIV = $this->HashIV;                                           //測試用HashIV，請自行帶入ECPay提供的HashIV
+			$obj->MerchantID = $this->MerchantID;                                                     //測試用MerchantID，請自行帶入ECPay提供的MerchantID
 			$obj->EncryptType = '1';                                                           //CheckMacValue加密類型，請固定填入1，使用SHA256加密
 			//基本參數(請依系統規劃自行調整)
 			$MerchantTradeNo = "Test" . time();
@@ -253,10 +267,10 @@ class Test extends CI_Controller
 			$obj = new ECPay_AllInOne();
 
 			//服務參數
-			$obj->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5";    //服務位置
-			$obj->HashKey = '5294y06JbISpM5x9';                                            //測試用Hashkey，請自行帶入ECPay提供的HashKey
-			$obj->HashIV = 'v77hoKGq4kWxNNIS';                                            //測試用HashIV，請自行帶入ECPay提供的HashIV
-			$obj->MerchantID = '2000132';                                                      //測試用MerchantID，請自行帶入ECPay提供的MerchantID
+			$obj->ServiceURL = $this->ServiceURL;    //服務位置
+			$obj->HashKey = $this->HashKey;                                            //測試用Hashkey，請自行帶入ECPay提供的HashKey
+			$obj->HashIV = $this->HashIV;                                            //測試用HashIV，請自行帶入ECPay提供的HashIV
+			$obj->MerchantID = $this->MerchantID;                                                      //測試用MerchantID，請自行帶入ECPay提供的MerchantID
 			$obj->EncryptType = '1';                                                            //CheckMacValue加密類型，請固定填入1，使用SHA256加密
 			//基本參數(請依系統規劃自行調整)
 			$MerchantTradeNo = "Test" . time();
@@ -312,10 +326,10 @@ class Test extends CI_Controller
 			$obj = new ECPay_AllInOne();
 
 			//服務參數
-			$obj->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5";  //服務位置
-			$obj->HashKey = '5294y06JbISpM5x9';                                          //測試用Hashkey，請自行帶入ECPay提供的HashKey
-			$obj->HashIV = 'v77hoKGq4kWxNNIS';                                          //測試用HashIV，請自行帶入ECPay提供的HashIV
-			$obj->MerchantID = '2000132';                                                    //測試用MerchantID，請自行帶入ECPay提供的MerchantID
+			$obj->ServiceURL = $this->ServiceURL;  //服務位置
+			$obj->HashKey = $this->HashKey;                                          //測試用Hashkey，請自行帶入ECPay提供的HashKey
+			$obj->HashIV = $this->HashIV;                                          //測試用HashIV，請自行帶入ECPay提供的HashIV
+			$obj->MerchantID = $this->MerchantID;                                                    //測試用MerchantID，請自行帶入ECPay提供的MerchantID
 			$obj->EncryptType = '1';                                                          //CheckMacValue加密類型，請固定填入1，使用SHA256加密
 			//基本參數(請依系統規劃自行調整)
 			$MerchantTradeNo = "Test" . time();

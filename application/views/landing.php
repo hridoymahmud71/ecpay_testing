@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bootstrap Example</title>
+	<title>ECpay test</title>
 	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="https://www.sccpre.cat/mypng/full/110-1108144_fifa-18-players-png.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,29 +18,31 @@
 </div>
 
 <div class="container">
-	<div class="row">
-		<div class="col-sm-2">
+	<div class="row mt-10">
+		<div class="col-sm-3">
 			<a class="btn btn-block btn-info" href="test/atm">ATM</a>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 			<a class="btn btn-block btn-info" href="test/all">All</a>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 			<a class="btn btn-block btn-info" href="test/barcode">Barcode</a>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 			<a class="btn btn-block btn-info" href="test/credit">Credit</a>
 		</div>
-		<div class="col-sm-2">
+	</div>
+	<br>
+	<div class="row mt-10">
+		<div class="col-sm-3">
 			<a class="btn btn-block btn-info" href="test/cvs">CVS</a>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 			<a class="btn btn-block btn-info" href="test/googlepay">Google Pay</a>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 			<a class="btn btn-block btn-info" href="test/web_atm">Web ATM</a>
 		</div>
-
 	</div>
 </div>
 
