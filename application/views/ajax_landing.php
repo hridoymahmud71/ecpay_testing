@@ -82,6 +82,7 @@
 				dataType: 'json',
 				data: 'func=pay&payment_type='+payment_type+'&invoice_status='+invoice_status,
 				success: function (sMsg){
+					console.log(sMsg);
 					if(sMsg.RtnCode == 1)
 					{
 						if(IsMobileAgent)

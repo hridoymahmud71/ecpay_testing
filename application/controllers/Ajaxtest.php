@@ -129,7 +129,18 @@ class Ajaxtest extends CI_Controller
 
 		// 4.將API回傳參數往前端送
 		if (!empty($sAjax_Return)) {
+
+			//test
+			/*echo "<pre>";
+			print_r($sAjax_Return);
+			echo "</pre>";
+			die();*/
+
 			echo $sAjax_Return;
+
+			/*$output = print_r($aAjax_Return, true);
+			file_put_contents(FCPATH.'dummy.txt', $output);*/
+
 		}
 		/*-----------------------------------------------------------------------*/
 	}
