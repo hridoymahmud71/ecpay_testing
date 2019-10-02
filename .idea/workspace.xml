@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed890092-399e-4044-989d-cb817535876b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Ajaxtest.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Ajaxtest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecpay_testing.zip" beforeDir="false" afterPath="$PROJECT_DIR$/ecpay_testing.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.rst" beforeDir="false" afterPath="$PROJECT_DIR$/readme.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +24,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Test.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/libraries/ECPayAIO_PHP/AioSDK/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-140" />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/libraries/ECPaySPCheckOut_PHP/ECPay.Payment.Integration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1020" />
           </provider>
         </entry>
       </file>
@@ -102,7 +121,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/application/libraries/ECPayAIO_PHP" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,6 +132,7 @@
         <option value="$PROJECT_DIR$/application/views/ajax_landing.php" />
         <option value="$PROJECT_DIR$/application/controllers/Ajaxtest.php" />
         <option value="$PROJECT_DIR$/application/controllers/Test.php" />
+        <option value="$PROJECT_DIR$/readme.rst" />
       </list>
     </option>
   </component>
@@ -146,6 +166,34 @@
               <item name="ecpay_testing" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecpay_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecpay_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecpay_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecpay_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="ECPayAIO_PHP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecpay_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecpay_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="ECPayAIO_PHP" type="462c0819:PsiDirectoryNode" />
+              <item name="AioSDK" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecpay_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecpay_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="ECPaySPCheckOut_PHP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecpay_testing" type="b2602c69:ProjectViewProjectNode" />
@@ -191,18 +239,18 @@
       <updated>1569845344165</updated>
       <workItem from="1569845357775" duration="1481000" />
       <workItem from="1569911061578" duration="12140000" />
-      <workItem from="1569996692266" duration="1245000" />
+      <workItem from="1569996692266" duration="1737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14866000" />
+    <option name="totallyTimeSpent" value="15358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -215,7 +263,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -279,6 +327,22 @@
           <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/ECPaySPCheckOut_PHP/ECPay.Payment.Integration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/ECPayAIO_PHP/AioSDK/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-140" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
 </project>
