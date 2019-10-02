@@ -14,7 +14,7 @@ class Ajaxtest extends CI_Controller
 		$this->sSPCheckOut_Url = "https://payment-stage.ecpay.com.tw/SP/SPCheckOut"; //original https://payment-stage.ecpay.com.tw/SP/SPCheckOut
 		$this->HashKey = "5294y06JbISpM5x9"; //original 5294y06JbISpM5x9
 		$this->HashIV = "v77hoKGq4kWxNNIS"; //original v77hoKGq4kWxNNIS
-		$this->MerchantID = "2000132"; //original 2000132
+		$this->MerchantID = "2000214"; //original 2000132 //not otp 2000214
 		$this->ReturnURL = $_SERVER['HTTP_HOST'] . '/ajaxtest/redirect';
 	}
 

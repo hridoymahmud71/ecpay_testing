@@ -28,7 +28,7 @@ class Test extends CI_Controller
 		$this->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V2"; //original https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5
 		$this->HashKey = "5294y06JbISpM5x9"; //original 5294y06JbISpM5x9
 		$this->HashIV = "v77hoKGq4kWxNNIS"; //original v77hoKGq4kWxNNIS
-		$this->MerchantID = "2000132"; //original 2000132
+		$this->MerchantID = "2000214"; //original 2000132 //not otp 2000214
 	}
 
 	public function atm()
@@ -426,7 +426,7 @@ class Test extends CI_Controller
 		try {
 			// 收到綠界科技的付款結果訊息，並判斷檢查碼是否相符
 			$AL = new ECPay_AllInOne();
-			$AL->MerchantID = '2000132';
+			$AL->MerchantID =  $this->MerchantID;
 			$AL->HashKey = '5294y06JbISpM5x9';
 			$AL->HashIV = 'v77hoKGq4kWxNNIS';
 			// $AL->EncryptType = ECPay_EncryptType::ENC_MD5;  // MD5
